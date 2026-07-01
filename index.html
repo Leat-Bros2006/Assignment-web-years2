@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Course Online</title>
+    <link rel="icon" type="logos/png" href="logos.png" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========== Navbar =========== -->
+    <header class="navbar">
+        <div class="logo">🎓 សិក្សា Online</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">ទំព័រដើម</a></li>
+            <li><a href="#">វគ្គសិក្សា</a></li>
+            <li><a href="#">ប្រភេទ</a></li>
+            <li><a href="#">អំពីយើង</a></li>
+            <li><a href="#">ទំនាក់ទំនង</a></li>
+        </ul>
+
+        <!-- ✅ KEEP SEARCH (DON'T REMOVE) -->
+        <div class="nav-search">
+            <input id="search_course" type="text" placeholder="ស្វែងរកវគ្គសិក្សា...">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <!-- overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- =========== Hero-Section =========== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>រៀនជំនាញថ្មីៗពីផ្ទះ</h1>
+
+            <p>
+                វគ្គសិក្សា Online មាន HTML, CSS, JavaScript, React និងច្រើនទៀត
+            </p>
+
+            <!-- ⭐ TRUST SECTION -->
+            <div class="trust">
+                <span>👨‍🎓 10,000+ សិស្ស</span>
+                <span>⭐ 4.8 ពិន្ទុមធ្យម</span>
+                <span>📚 30+ វគ្គសិក្សា</span>
+            </div>
+
+            <!-- ⭐ FEATURES -->
+            <ul class="features">
+                <li>✔ រៀនបានគ្រប់ទីកន្លែង</li>
+                <li>✔ អនុវត្តក្នុងថ្នាក់ភ្លាមៗ</li>
+                <li>✔ រាល់ការបង្រៀនតែងមានថតវីដេអូទុក សម្រាប់ជំនួយដល់សិស្ស</li>
+                <li>✔ ខាងស្តាំជាវីដេអូលើ Youtube អាចទៅមើលពីរបៀបដែលគ្រូបង្រៀនបាន</li>
+            </ul>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="hero-video">
+            <iframe
+                src="https://www.youtube.com/embed/qYHTj3dTCO4?autoplay=1&mute=1&loop=1&playlist=qYHTj3dTCO4&controls=1&rel=0"
+                title="Course Preview"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen controls=1 mute=1>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- =========== Courses-Section =========== -->
+    <section class="courses-section">
+        <div class="section-header">
+            <h2>វគ្គសិក្សាដែលមាន</h2>
+            <p>ជ្រើសរើសវគ្គសិក្សាដែលសាកសមសម្រាប់អ្នក</p>
+        </div>
+        <div class="filter-section">
+            <!-- <input type="text" id="searchInput" placeholder="🔍 ស្វែងរកវគ្គសិក្សា..."> -->
+            <select id="levelFilter">
+                <option value="all">គ្រប់កម្រិត</option>
+                <option value="Beginner">កម្រិតដំបូង</option>
+                <option value="Intermediate">កម្រិតមធ្យម</option>
+                <option value="Advanced">កម្រិតខ្ពស់</option>
+            </select>
+            <input type="number" id="priceFilter" placeholder="ស្វែងរកតាមតម្លៃ">
+        </div>
+
+        <div class="courses-grid">
+            <!-- CARD (sample UI only) -->
+            <div class="course-card">
+                <img src="html.jpg" alt="course">
+                <div class="course-content">
+                    <h3>HTML Complete Course</h3>
+                    <div class="meta">
+                        <span>⭐ 4.7</span>
+                        <span>👨‍🎓 320</span>
+                    </div>
+                    <p class="level">កម្រិតដំបូង</p>
+                    <div class="bottom">
+                        <span class="price">$25</span>
+                        <button>មើលលម្អិត</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========== WHY CHOOSE US =========== -->
+    <section class="why-section">
+        <h2>ហេតុអ្វីត្រូវរៀនជាមួយយើង?</h2>
+
+        <div class="why-grid">
+            <div class="why-card">
+                <h3>💻 រៀនតាម Google Meet</h3>
+                <p>រៀនផ្ទាល់ជាមួយគ្រូតាម Google Meet មាន interaction ពិតៗ</p>
+            </div>
+
+            <div class="why-card">
+                <h3>🤝 ការបង្រៀន</h3>
+                <p>គ្រូបង្រៀន step-by-step និងឲ្យសិស្សអនុវត្តក្នុងថ្នាក់ភ្លាមៗ</p>
+            </div>
+
+            <div class="why-card">
+                <h3>🤝 Support ពេលរៀន</h3>
+                <p>សិស្សអាចសួរភ្លាមៗ ពេលមានចម្ងល់</p>
+            </div>
+            <div class="why-card">
+                <h3>🎥 វីដេអូមានគុណភាព</h3>
+                <p>បន្ទាប់ពីរៀនមាន record វីដេអូទុកសម្រាប់ជំនួយដល់សិស្ស</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========== Footer =========== -->
+    <footer class="footer">
+        <div class="footer-wrapper">
+
+            <!-- Brand -->
+            <div class="footer-col brand">
+                <h2>LearnCode</h2>
+                <p>
+                    រៀន coding និង UI/UX ពីដំបូងដល់កម្រិតខ្ពស់
+                    ជាមួយវគ្គសិក្សាដែលងាយយល់ និងអនុវត្តបានពិត
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">Courses</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <!-- Categories -->
+            <div class="footer-col">
+                <h3>Categories</h3>
+                <p>Web Development</p>
+                <p>Design</p>
+                <p>Programming</p>
+                <p>Mobile Dev</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>📧 leatbros@gmail.com</p>
+                <p>📞 +855 12 345 678</p>
+
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
+                    <a href="http://t.me/leatbros0979445608" target="_blank">📱 Telegram</a>
+                    <a href="https://www.youtube.com/@Brosliketeaching" target="_blank">▶ YouTube</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 LearnCode. Built with ❤️ for learners</p>
+        </div>
+    </footer>
+
+
+    <script type="module" src="./srcipt.js"></script>
+</body>
+
+</html>
