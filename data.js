@@ -1,3 +1,5 @@
+
+// Course Data
 export const courses = [
     {
         id: 1,
@@ -280,3 +282,25 @@ export const courses = [
         image: "./images/p20.png"
     }
 ];
+
+// Why Data
+export const whyStudy = [
+    {
+        title: "💻 រៀនតាម Google Meet",
+        des: "រៀនផ្ទាល់ជាមួយគ្រូតាម Google Meet មាន interaction ពិតៗ"
+    },
+    {
+        title: "🤝 ការបង្រៀន",
+        des: "គ្រូបង្រៀន step-by-step និងឲ្យសិស្សអនុវត្តក្នុងថ្នាក់ភ្លាមៗ"
+    },
+    {
+        title: "🚀 Support ពេលរៀនt",
+        des: "សិស្សអាចសួរភ្លាមៗ ពេលមានចម្ងល់"
+    },
+    {
+        title: "🎥 វីដេអូមានគុណភាព",
+        des: "បន្ទាប់ពីរៀនមាន record វីដេអូទុកសម្រាប់ជំនួយដល់សិស្ស"
+    },
+]
+
+

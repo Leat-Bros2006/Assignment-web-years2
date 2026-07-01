@@ -1,6 +1,6 @@
 // inport data
 
-import { courses } from "./data.js";
+import { courses, whyStudy } from "./data.js";
 
 // ================ Navbar Toggle ================
 document.addEventListener("DOMContentLoaded", () => {
@@ -33,6 +33,7 @@ let coursesGrid = document.querySelector(".courses-grid")
 const searchInput = document.getElementById("search_course");
 const priceSearch = document.getElementById("priceFilter")
 const levelFilter = document.getElementById("levelFilter")
+const whyGrid = document.querySelector(".why-grid")
 
 const renderCourse = (dataCourse) => {
     if (dataCourse.length === 0) {
@@ -117,4 +118,18 @@ function viewDetail(id) {
     window.location.href = `detail.html?id=${id}`;
 }
 
+// ========== Render Why Study ========== 
+document.addEventListener("DOMContentLoaded", () =>{
+    let whyToHTML = whyStudy.map((item) =>{
+        return `
+            <div class="why-card">
+                <h3>${item.title}</h3>
+                <p>${item.des}</p>
+            </div>
+        `
+    }).join("")
+
+    whyGrid.innerHTML = whyToHTML
+
+})
 
