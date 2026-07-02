@@ -1,4 +1,27 @@
 
+export const navbar = [
+    {
+        menu: "ទំព័រដើម",
+        link: "#"
+    },
+    {
+        menu: "វគ្គសិក្សា",
+        link: "#"
+    },
+    {
+        menu: "ប្រភេទ",
+        link: "#"
+    },
+    {
+        menu: "អំពីយើង",
+        link: "#"
+    },
+    {
+        menu: "ទំនាក់ទំនង",
+        link: "#"
+    },
+]
+
 // Course Data
 export const courses = [
     {
@@ -302,5 +325,19 @@ export const whyStudy = [
         des: "បន្ទាប់ពីរៀនមាន record វីដេអូទុកសម្រាប់ជំនួយដល់សិស្ស"
     },
 ]
+
+// Teacher Detail
+export const teachers = [
+    {
+        id: 1,
+        name: "Heng Menghoy",
+        position: "Full Stack Web Developer",
+        image: "./images/profile.png",
+        bio: "មានបទពិសោធន៍បង្រៀន Web Development ជាច្រើនឆ្នាំ...",
+        students: 1000,
+        courses: 30,
+        experience: 5
+    }
+];
 
 

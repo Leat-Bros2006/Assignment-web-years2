@@ -1,6 +1,9 @@
 // inport data
 
-import { courses, whyStudy } from "./data.js";
+import { courses, whyStudy, navbar } from "./data.js";
+
+// ================ Navbar Dynamic data ===============
+
 
 // ================ Navbar Toggle ================
 document.addEventListener("DOMContentLoaded", () => {
@@ -29,11 +32,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // ====== Selectors================
-let coursesGrid = document.querySelector(".courses-grid")
+const coursesGrid = document.querySelector(".courses-grid")
 const searchInput = document.getElementById("search_course");
 const priceSearch = document.getElementById("priceFilter")
 const levelFilter = document.getElementById("levelFilter")
 const whyGrid = document.querySelector(".why-grid")
+const navLinks = document.querySelector(".nav-links")
+
+document.addEventListener("DOMContentLoaded", () =>{
+    let navResult = navbar.map((item) =>{
+        return `
+            <li><a href="${item.menu}">${item.menu}</a></li>
+        `
+    }).join("")
+
+    navLinks.innerHTML = navResult
+})
+
 
 const renderCourse = (dataCourse) => {
     if (dataCourse.length === 0) {
