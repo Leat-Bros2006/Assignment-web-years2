@@ -1,10 +1,8 @@
 // inport data
 
-import { courses, whyStudy, navbar } from "./data.js";
+import { courses, whyStudy, navbar, heros, features, instructorStats } from "../data/script.js";
 
 // ================ Navbar Dynamic data ===============
-
-
 // ================ Navbar Toggle ================
 document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.getElementById("menu-toggle");
@@ -32,15 +30,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // ====== Selectors================
+const trust = document.querySelector(".trust")
+const getFeatures = document.querySelector(".features")
 const coursesGrid = document.querySelector(".courses-grid")
 const searchInput = document.getElementById("search_course");
 const priceSearch = document.getElementById("priceFilter")
 const levelFilter = document.getElementById("levelFilter")
 const whyGrid = document.querySelector(".why-grid")
 const navLinks = document.querySelector(".nav-links")
+const instructorStat = document.querySelector(".instructor-stats")
 
-document.addEventListener("DOMContentLoaded", () =>{
-    let navResult = navbar.map((item) =>{
+// ========== Hero (trust) ========== 
+document.addEventListener("DOMContentLoaded", () => {
+    let heroResult = heros.map((item) => {
+        return `
+            <span>${item}</span>
+        `
+    }).join("")
+
+    trust.innerHTML = heroResult;
+})
+
+// ========== Hero (features) ==========
+document.addEventListener("DOMContentLoaded", () => {
+    let featuresResult = features.map((item) => {
+        return `
+            <li>${item}</li>
+        `
+    }).join("")
+    getFeatures.innerHTML = featuresResult;
+})
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    let navResult = navbar.map((item) => {
         return `
             <li><a href="${item.menu}">${item.menu}</a></li>
         `
@@ -53,9 +76,9 @@ document.addEventListener("DOMContentLoaded", () =>{
 const renderCourse = (dataCourse) => {
     if (dataCourse.length === 0) {
         coursesGrid.innerHTML = `
-             <div style="height: 60vh">
+             <div style="height: 60vh; color:red;">
                 <p>មិនមានតម្លៃនេះទេ!</p>
-                <p>សូមព្យាយាម​​ សាកល្បងស្វែងរកតម្លៃផ្សេងទៀត!</p>
+                <p>សូមព្យាយាម​​ ស្វែងរកតម្លៃផ្សេងទៀត!</p>
              </div>
         `;
         return
@@ -134,8 +157,8 @@ function viewDetail(id) {
 }
 
 // ========== Render Why Study ========== 
-document.addEventListener("DOMContentLoaded", () =>{
-    let whyToHTML = whyStudy.map((item) =>{
+document.addEventListener("DOMContentLoaded", () => {
+    let whyToHTML = whyStudy.map((item) => {
         return `
             <div class="why-card">
                 <h3>${item.title}</h3>
@@ -147,4 +170,18 @@ document.addEventListener("DOMContentLoaded", () =>{
     whyGrid.innerHTML = whyToHTML
 
 })
+
+// ========== Render instructorInfo ==========
+document.addEventListener("DOMContentLoaded", () => {
+    let instructor = instructorStats.map((item) =>{
+        return `
+            <div>
+                <h4>${item.increse}+</h4>
+                <span>${item.student}</span>
+            </div>
+        `
+    }).join("")
+    instructorStat.innerHTML = instructor;
+})
+
 

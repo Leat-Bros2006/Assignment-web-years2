@@ -36,7 +36,7 @@ export const courses = [
         duration: "10 Hours",
         rating: 4.7,
         students: 320,
-        image: "./images/p1.png"
+        image: "../images/p1.png"
     },
     {
         id: 2,
@@ -50,7 +50,7 @@ export const courses = [
         duration: "12 Hours",
         rating: 4.8,
         students: 280,
-        image: "./images/p2.png"
+        image: "../images/p2.png"
     },
     {
         id: 3,
@@ -64,7 +64,7 @@ export const courses = [
         duration: "18 Hours",
         rating: 4.9,
         students: 550,
-        image: "./images/p3.png"
+        image: "../images/p3.png"
     },
     {
         id: 4,
@@ -78,7 +78,7 @@ export const courses = [
         duration: "22 Hours",
         rating: 4.9,
         students: 240,
-        image: "./images/p4.png"
+        image: "../images/p4.png"
     },
     {
         id: 5,
@@ -92,7 +92,7 @@ export const courses = [
         duration: "8 Hours",
         rating: 4.6,
         students: 400,
-        image: "./images/p5.png"
+        image: "../images/p5.png"
     },
     {
         id: 6,
@@ -106,7 +106,7 @@ export const courses = [
         duration: "14 Hours",
         rating: 4.8,
         students: 310,
-        image: "./images/p6.png"
+        image: "../images/p6.png"
     },
     {
         id: 7,
@@ -120,7 +120,7 @@ export const courses = [
         duration: "30 Hours",
         rating: 4.9,
         students: 670,
-        image: "./images/p7.png"
+        image: "../images/p7.png"
     },
     {
         id: 8,
@@ -134,7 +134,7 @@ export const courses = [
         duration: "35 Hours",
         rating: 4.8,
         students: 210,
-        image: "./images/p8.png"
+        image: "../images/p8.png"
     },
     {
         id: 9,
@@ -148,7 +148,7 @@ export const courses = [
         duration: "25 Hours",
         rating: 4.7,
         students: 180,
-        image: "./images/p9.png"
+        image: "../images/p9.png"
     },
     {
         id: 10,
@@ -162,7 +162,7 @@ export const courses = [
         duration: "20 Hours",
         rating: 4.9,
         students: 800,
-        image: "./images/p10.png"
+        image: "../images/p10.png"
     },
     {
         id: 11,
@@ -176,7 +176,7 @@ export const courses = [
         duration: "18 Hours",
         rating: 4.8,
         students: 260,
-        image: "./images/p11.png"
+        image: "../images/p11.png"
     },
     {
         id: 12,
@@ -190,7 +190,7 @@ export const courses = [
         duration: "40 Hours",
         rating: 4.9,
         students: 150,
-        image: "./images/p12.png"
+        image: "../images/p12.png"
     },
     {
         id: 13,
@@ -204,7 +204,7 @@ export const courses = [
         duration: "24 Hours",
         rating: 4.7,
         students: 340,
-        image: "./images/p13.png"
+        image: "../images/p13.png"
     },
     {
         id: 14,
@@ -218,7 +218,7 @@ export const courses = [
         duration: "32 Hours",
         rating: 4.8,
         students: 220,
-        image: "./images/p14.png"
+        image: "../images/p14.png"
     },
     {
         id: 15,
@@ -232,7 +232,7 @@ export const courses = [
         duration: "28 Hours",
         rating: 4.8,
         students: 390,
-        image: "./images/p15.png"
+        image: "../images/p15.png"
     },
     {
         id: 16,
@@ -246,7 +246,7 @@ export const courses = [
         duration: "15 Hours",
         rating: 4.7,
         students: 175,
-        image: "./images/p16.png"
+        image: "../images/p16.png"
     },
     {
         id: 17,
@@ -260,7 +260,7 @@ export const courses = [
         duration: "16 Hours",
         rating: 4.8,
         students: 450,
-        image: "./images/p17.png"
+        image: "../images/p17.png"
     },
     {
         id: 18,
@@ -274,7 +274,7 @@ export const courses = [
         duration: "12 Hours",
         rating: 4.7,
         students: 500,
-        image: "./images/p18.png"
+        image: "../images/p18.png"
     },
     {
         id: 19,
@@ -288,7 +288,7 @@ export const courses = [
         duration: "18 Hours",
         rating: 4.6,
         students: 270,
-        image: "./images/p19.png"
+        image: "../images/p19.png"
     },
     {
         id: 20,
@@ -302,7 +302,7 @@ export const courses = [
         duration: "35 Hours",
         rating: 4.9,
         students: 300,
-        image: "./images/p20.png"
+        image: "../images/p20.png"
     }
 ];
 
@@ -340,4 +340,33 @@ export const teachers = [
     }
 ];
 
+// Heros
+export const heros = [
+    "👨‍🎓 10,000+ សិស្ស",
+    "⭐ 4.8 ពិន្ទុមធ្យម",
+    "📚 30+ វគ្គសិក្សា"
+]
 
+// features
+export const features = [
+    "✔ រៀនបានគ្រប់ទីកន្លែង",
+    "✔ អនុវត្តក្នុងថ្នាក់ភ្លាមៗ",
+    "✔ រាល់ការបង្រៀនតែងមានថតវីដេអូទុក សម្រាប់ជំនួយដល់សិស្ស",
+    "✔ ខាងស្តាំជាវីដេអូលើ Youtube អាចទៅមើលពីរបៀបដែលគ្រូបង្រៀនបាន"
+]
+
+// instuctorStats
+export const instructorStats = [
+    {
+        increse: "1000",
+        student: "សិស្ស"
+    },
+    {
+        increse: "30",
+        student: "វគ្គសិក្សា"
+    },
+    {
+        increse: "5",
+        student: "ឆ្នាំបទពិសោធន៍"
+    },
+]

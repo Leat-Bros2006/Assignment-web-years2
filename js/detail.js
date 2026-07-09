@@ -1,4 +1,4 @@
-import { courses } from "./data.js";
+import { courses } from "../data/index.js";
 
 // 1. Read URL
 const params = new URLSearchParams(window.location.search);
