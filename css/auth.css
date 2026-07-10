@@ -13,13 +13,19 @@ body {
     padding: 30px 0px;
 }
 
-.card {
-    width: 420px;
-    background: white;
-    padding: 40px;
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+.container{
+    width: 100%;
 }
+
+.card {
+    width: 40%;
+    /* max-width: 420px; */
+    background: white;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+}
+
 
 h1 {
     text-align: center;
@@ -135,7 +141,7 @@ button:hover {
 }
 
 .register-card {
-    max-width: 450px;
+    /* max-width: 450px; */
     height: auto;
 }
 
@@ -152,4 +158,76 @@ button:hover {
     align-items: center;
     gap: 8px;
     font-size: 14px;
+}
+
+/* ================= Responsive ================= */
+@media(max-width: 1000px){
+    .card{
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 420px;
+        padding: 30px 25px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    input {
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    body {
+        padding:20px;
+    }
+
+    .card {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .card p {
+        margin-bottom: 20px;
+    }
+
+    .option {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .remember span {
+        font-size: 13px;
+    }
+
+    .bottom {
+        font-size: 14px;
+    }
 }
