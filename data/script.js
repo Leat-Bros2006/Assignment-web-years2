@@ -1,4 +1,3 @@
-
 export const navbar = [
     {
         menu: "ទំព័រដើម",
@@ -317,7 +316,7 @@ export const whyStudy = [
         des: "គ្រូបង្រៀន step-by-step និងឲ្យសិស្សអនុវត្តក្នុងថ្នាក់ភ្លាមៗ"
     },
     {
-        title: "🚀 Support ពេលរៀនt",
+        title: "🚀 Support ពេលរៀន",
         des: "សិស្សអាចសួរភ្លាមៗ ពេលមានចម្ងល់"
     },
     {
