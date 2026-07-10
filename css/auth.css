@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Khmer", sans-serif;
+}
+
+body {
+    background: #eef5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.card {
+    width: 420px;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+}
+
+h1 {
+    text-align: center;
+    color: #007BA7;
+}
+
+.card p {
+    text-align: center;
+    margin: 12px 0 25px;
+    color: #666;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #007BA7;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.option a {
+    color: #007BA7;
+    text-decoration: none;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.remember input {
+    width: auto;
+    margin: 0;
+}
+
+.remember span {
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #007BA7;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #006080;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.line::before,
+.line::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.line span {
+    margin: 0 12px;
+    color: #999;
+}
+
+.google {
+    background: white;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.google:hover {
+    color: white;
+}
+
+.bottom {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.bottom a {
+    color: #007BA7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-card {
+    max-width: 450px;
+    height: auto;
+}
+
+.register-card form {
+    margin-top: 20px;
+}
+
+.register-card input {
+    margin-bottom: 15px;
+}
+
+.option label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}

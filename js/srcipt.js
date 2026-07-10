@@ -152,8 +152,8 @@ levelFilter.addEventListener("change", () => {
 })
 
 // ========== Product Detail ============
-function viewDetail(id) {
-    window.location.href = `detail.html?id=${id}`;
+window.viewDetail = function(id) {
+    window.location.href = `html/detail.html?id=${id}`;
 }
 
 // ========== Render Why Study ========== 
