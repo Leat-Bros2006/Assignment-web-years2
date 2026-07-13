@@ -18,32 +18,24 @@
             <p>
                 ចូលរួមជាមួយ សិក្សាតាម Online ដើម្បីរៀនជំនាញថ្មីៗ
             </p>
-            <form>
+            <form id="registerForm">
                 <label>ឈ្មោះពេញ</label>
-                <input type="text" placeholder="បញ្ចូលឈ្មោះពេញ">
+                <input id="fullname" type="text" placeholder="បញ្ចូលឈ្មោះពេញ">
 
                 <label>អ៊ីមែល</label>
-                <input type="email" placeholder="បញ្ចូលអ៊ីមែល">
+                <input id="email" type="email" placeholder="បញ្ចូលអ៊ីមែល">
 
                 <label>លេខទូរស័ព្ទ</label>
-                <input type="text" placeholder="បញ្ចូលលេខទូរស័ព្ទ">
+                <input id="phone" type="text" placeholder="បញ្ចូលលេខទូរស័ព្ទ">
 
                 <label>ពាក្យសម្ងាត់</label>
-                <input type="password" placeholder="បញ្ចូលពាក្យសម្ងាត់">
+                <input id="password" type="password" placeholder="បញ្ចូលពាក្យសម្ងាត់">
 
                 <label>បញ្ជាក់ពាក្យសម្ងាត់</label>
-                <input type="password" placeholder="បញ្ចូលពាក្យសម្ងាត់ម្តងទៀត">
-
-                <!-- <div class="option">
-                    <label>
-                        <input type="checkbox">
-                        ខ្ញុំយល់ព្រមលើលក្ខខណ្ឌប្រើប្រាស់
-                    </label>
-                </div> -->
-
-                <button>
-                    បង្កើតគណនី
-                </button>
+                <input id="confirmPassword" type="password" placeholder="បញ្ចូលពាក្យសម្ងាត់ម្តងទៀត">
+                <p id="passwordError"></p>
+                <p id="successMessage"></p>
+                <button type="submit">បង្កើតគណនី</button>
             </form>
 
             <div class="line">
@@ -63,5 +55,5 @@
         </div>
     </div>
 </body>
-
+<script src="../js/register.js"></script>
 </html>
