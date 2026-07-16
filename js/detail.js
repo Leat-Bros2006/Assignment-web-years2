@@ -30,17 +30,17 @@ function renderCourseDetail(course) {
     document.getElementById("duration").textContent = course.duration;
     document.getElementById("level").textContent = course.levelKh;
     document.getElementById("price").textContent = `$${course.price}`;
+
+    // ============== Enrol Course ==============
+    let enrolBtn = document.getElementById("enrollBtn")
+
+    enrolBtn.addEventListener("click", () => {
+        const user = localStorage.getItem("isLogin")
+        if (user) {
+            alert("អាចចូលរៀនបាន")
+            window.location.href = `../html/checkout.html?id=${course.id}`;
+        } else {
+            window.location.href = `../html/login.html?id=${course.id}`;
+        }
+    })
 }
-
-// ============== Enrol Course ==============
-let enrolBtn = document.getElementById("enrollBtn")
-
-enrolBtn.addEventListener("click", () => {
-    const user = localStorage.getItem("isLogin")
-    if (user) {
-        alert("អាចចូលរៀនបាន")
-        window.location.href = "../html/learn.html"
-    } else {
-        window.location.href = "../html/login.html"
-    }
-})

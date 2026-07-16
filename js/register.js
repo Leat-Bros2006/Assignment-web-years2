@@ -35,6 +35,4 @@ registerForm.addEventListener("submit", (e) => {
     setTimeout(() => {
         window.location.href = "login.html";
     }, 1500);
-
-
 })

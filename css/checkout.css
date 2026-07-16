@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Khmer", sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.checkout-card {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+    padding: 30px;
+}
+
+.checkout-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.course {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.course img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.course h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.course p {
+    color: gray;
+    font-size: 14px;
+}
+
+.price {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 18px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+button:hover {
+    background: #005ecb;
+}
+
+#message p{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: green;
+    display: none;
+}
+
+@media (max-width:600px) {
+
+    .checkout-card {
+        padding: 20px;
+    }
+
+    .course {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .course img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .row {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}
