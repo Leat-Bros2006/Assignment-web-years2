@@ -11,7 +11,7 @@ if (!course) {
     document.body.innerHTML = `
         <div>
             <h1>Course Not Found</h1>
-            <p>មិនមានវគ្គសិក្សានេះទេ</p>
+            <p style="text-align:center;">មិនមានវគ្គសិក្សានេះទេ</p>
         </div>
     `;
 } else {
@@ -22,14 +22,18 @@ if (!course) {
     document.getElementById("coursePrice").textContent = `$${course.price}`;
     document.getElementById("courseTotal").textContent = `$${course.price}`;
 }
+
 // Payment
 
 const payBtn = document.getElementById("payBtn");
 const message = document.getElementById("message");
 
 payBtn.addEventListener("click", () => {
+
     localStorage.setItem("isPurchased", "true");
     message.textContent = "✅ បង់ប្រាក់ជោគជ័យ";
+    message.style.display = "block"
+    message.style.marginTop = "15px"
     setTimeout(() => {
         window.location.href =
             `../html/learn.html?id=${course.id}`;

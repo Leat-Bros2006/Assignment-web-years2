@@ -8,14 +8,18 @@ get_form.addEventListener("submit", function (e) {
     let email = document.getElementById("email").value
     let password = document.getElementById("password").value
 
+    const params = new URLSearchParams(window.location.search);
+    const courseId = params.get("id");
+
 
     let user = JSON.parse(localStorage.getItem("user"))
 
     error.textContent = ""
-    error.textContent = ""
+    success.textContent = ""
 
     if (!user) {
         error.textContent = "សូមបង្កើតគណនីជាមុនសិន!"
+        error.style.color = "red"
         return;
     }
 

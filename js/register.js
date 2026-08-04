@@ -15,6 +15,19 @@ registerForm.addEventListener("submit", (e) => {
 
     passwordError.textContent = "";
 
+    // check field
+    if (
+        fullname === "" ||
+        email === "" ||
+        phone === "" ||
+        password === "" ||
+        confirmPassword === ""
+    ) {
+        passwordError.textContent = "សូមបំពេញព័ត៌មានទាំងអស់!"
+        passwordError.style.color = "red"
+        return;
+    }
+
     if (password !== confirmPassword) {
         passwordError.textContent = `Password មិនដូចគ្នា!`
         return;
