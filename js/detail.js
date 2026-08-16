@@ -38,11 +38,7 @@ function renderCourseDetail(course) {
 
     enrolBtn.addEventListener("click", () => {
 
-        // let isLogin = localStorage.getItem("isLogin");
         let isLogin = localStorage.getItem("isLogin")
-
-        const params = new URLSearchParams(window.location.search);
-        const courseId = params.get("id");
 
         if (isLogin === "true") {
             smgSuccess.textContent = `បន្តទៅការបញ្ជាទិញវគ្គសិក្សា`
@@ -50,13 +46,13 @@ function renderCourseDetail(course) {
             smgSuccess.style.color = "green"
             smgSuccess.style.textAlign = "center"
 
-            setTimeout(() =>{
+            setTimeout(() => {
                 window.location.href = `../html/checkout.html?id=${course.id}`;
             }, 1700)
+
         } else {
-            setTimeout(()=>{
-                window.location.href = `../html/login.html?id=${course.id}`;
-            }, 1500)
+            localStorage.setItem("pendingCourseId", course.id);
+            window.location.href = `../html/login.html?id=${course.id}`;
         }
     })
 }

@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="km">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learn Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/learn.css">
 </head>
+
 <body>
-    asdf
+    <div class="container">
+        <!-- Left -->
+        <div class="video-section">
+            <div class="course-header">
+                <h1 id="courseTitle"></h1>
+            </div>
+            <div class="video-box">
+                <iframe id="courseVideo" width="560" height="315"
+                    src="https://www.youtube.com/embed/uTNlmfsH_AI?si=zCJJFGaD1CU-srT6" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="description">
+                <h3>អំពីវគ្គសិក្សា</h3>
+                <p id="courseDescription">
+                    
+                </p>
+            </div>
+        </div>
+
+        <!-- Right -->
+        <div class="lesson-section">
+            <h2>📚 មេរៀន</h2>
+            <ul id="lessonList">
+                <li>Introduction</li>
+                <li>HTML Basics</li>
+                <li>CSS Basics</li>
+                <li>JavaScript</li>
+                <li>React Introduction</li>
+            </ul>
+        </div>
+    </div>
 </body>
+<script type="module" src="../js/learn.js"></script>
+
 </html>

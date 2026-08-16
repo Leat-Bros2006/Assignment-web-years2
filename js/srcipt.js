@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     let navResult = navbar.map((item) => {
         return `
-            <li><a href="${item.menu}">${item.menu}</a></li>
+            <li><a href="${item.link}">${item.menu}</a></li>
         `
     }).join("")
 

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Khmer', sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+}
+
+
+/* ===== Main Layout ===== */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    padding: 30px;
+}
+
+
+/* ===== Video Section ===== */
+.video-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+}
+
+
+/* ===== Course Title ===== */
+.course-header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+#courseTitle {
+    font-size: 32px;
+    color: #022e61;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+
+/* ===== Video Player ===== */
+.video-box {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 25px;
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+
+/* ===== Course Description ===== */
+.description {
+    line-height: 1.8;
+}
+
+.description h3 {
+    color: #022e61;
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #555;
+}
+
+
+/* ===== Lesson Sidebar ===== */
+.lesson-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+    height: fit-content;
+}
+
+.lesson-section h2 {
+    color: #022e61;
+    margin-bottom: 20px;
+}
+
+
+/* ===== Lesson List ===== */
+.lesson-section ul {
+    list-style: none;
+}
+
+.lesson-section li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.lesson-section li:hover {
+    background: #007BA7;
+    color: white;
+}
+
+
+/* ===== Responsive ===== */
+@media(max-width:900px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    #courseTitle {
+        font-size: 25px;
+    }
+
+}

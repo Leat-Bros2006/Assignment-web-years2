@@ -30,6 +30,7 @@ registerForm.addEventListener("submit", (e) => {
 
     if (password !== confirmPassword) {
         passwordError.textContent = `Password មិនដូចគ្នា!`
+        passwordError.style.color = "red"
         return;
     }
 

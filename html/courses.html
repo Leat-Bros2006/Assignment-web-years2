@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="logos/png" href="../images/logos.png" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- =========== Navbar =========== -->
+    <header class="navbar">
+        <div class="logo">🎓 សិក្សាតាម Online</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <!-- <li><a href="../index.html">ទំព័រដើម</a></li>
+            <li><a href="./courses.html">វគ្គសិក្សា</a></li>
+            <li><a href="#">ប្រភេទ</a></li>
+            <li><a href="#">អំពីយើង</a></li>
+            <li><a href="#">ទំនាក់ទំនង</a></li> -->
+        </ul>
+
+        <!-- ✅ KEEP SEARCH (DON'T REMOVE) -->
+        <div class="nav-search">
+            <input id="search_course" type="text" placeholder="ស្វែងរកវគ្គសិក្សា...">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <!-- =========== Courses-Section =========== -->
+    <section class="courses-section">
+        <div class="section-header">
+            <h2>វគ្គសិក្សាដែលមាន</h2>
+            <p>ជ្រើសរើសវគ្គសិក្សាដែលសាកសមសម្រាប់អ្នក</p>
+        </div>
+        <div class="filter-section">
+            <!-- <input type="text" id="searchInput" placeholder="🔍 ស្វែងរកវគ្គសិក្សា..."> -->
+            <select id="levelFilter">
+                <option value="all">គ្រប់កម្រិត</option>
+                <option value="Beginner">កម្រិតដំបូង</option>
+                <option value="Intermediate">កម្រិតមធ្យម</option>
+                <option value="Advanced">កម្រិតខ្ពស់</option>
+            </select>
+            <input type="number" id="priceFilter" placeholder="ស្វែងរកតាមតម្លៃ">
+        </div>
+
+        <div class="courses-grid">
+            <!-- CARD (sample UI only) -->
+            <!-- <div class="course-card">
+                <img src="../images/p1.png" alt="course">
+                <div class="course-content">
+                    <h3>HTML Complete Course</h3>
+                    <div class="meta">
+                        <span>⭐ 4.7</span>
+                        <span>👨‍🎓 320</span>
+                    </div>
+                    <p class="level">កម្រិតដំបូង</p>
+                    <div class="bottom">
+                        <span class="price">$25</span>
+                        <button>មើលលម្អិត</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+</body>
+<script type="module" src="../js/srcipt.js"></script>
+</html>

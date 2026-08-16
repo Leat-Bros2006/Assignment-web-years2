@@ -1,11 +1,11 @@
 export const navbar = [
     {
         menu: "ទំព័រដើម",
-        link: "#"
+        link: "../html/index.html"
     },
     {
         menu: "វគ្គសិក្សា",
-        link: "#"
+        link: "../html/courses.html"
     },
     {
         menu: "ប្រភេទ",
@@ -13,16 +13,17 @@ export const navbar = [
     },
     {
         menu: "អំពីយើង",
-        link: "#"
+        link: "../html/aboutUs.html"
     },
     {
         menu: "ទំនាក់ទំនង",
-        link: "#"
+        link: "../html/contact.html"
     },
 ]
 
 // Course Data
 export const courses = [
+    // id: 1
     {
         id: 1,
         title: "HTML Complete Course",
@@ -35,8 +36,13 @@ export const courses = [
         duration: "10 Hours",
         rating: 4.7,
         students: 320,
-        image: "../images/p1.png"
+        image: "../images/p1.png",
+
+        description: "រៀន HTML ពីមូលដ្ឋានរហូតដល់ការបង្កើត Structure Website, Tag, Form និង HTML5។",
+        video: "https://www.youtube.com/embed/qz0aGYrrlhU"
     },
+
+    // id: 2
     {
         id: 2,
         title: "CSS Mastery",
@@ -49,8 +55,13 @@ export const courses = [
         duration: "12 Hours",
         rating: 4.8,
         students: 280,
-        image: "../images/p2.png"
+        image: "../images/p2.png",
+
+        description: "រៀន CSS Styling, Flexbox, Grid, Animation និង Responsive Design ដើម្បីរចនា Website ស្អាត។",
+        video: "https://www.youtube.com/embed/1Rs2ND1ryYc"
     },
+
+    // id: 3
     {
         id: 3,
         title: "JavaScript Fundamentals",
@@ -63,8 +74,13 @@ export const courses = [
         duration: "18 Hours",
         rating: 4.9,
         students: 550,
-        image: "../images/p3.png"
+        image: "../images/p3.png",
+
+        description: "សិក្សា JavaScript ពី Variable, Function, Array, Object, DOM និងការបង្កើត Interactive Website។",
+        video: "https://www.youtube.com/embed/PkZNo7MFNFg"
     },
+
+    // id: 4
     {
         id: 4,
         title: "Advanced JavaScript",
@@ -77,8 +93,13 @@ export const courses = [
         duration: "22 Hours",
         rating: 4.9,
         students: 240,
-        image: "../images/p4.png"
+        image: "../images/p4.png",
+
+        description: "រៀន JavaScript កម្រិតខ្ពស់ដូចជា Async, Promise, API, Module និង Best Practice។",
+        video: "https://www.youtube.com/embed/PoRJizFvM7s"
     },
+
+    // id: 5
     {
         id: 5,
         title: "Bootstrap 5",
@@ -91,8 +112,13 @@ export const courses = [
         duration: "8 Hours",
         rating: 4.6,
         students: 400,
-        image: "../images/p5.png"
+        image: "../images/p5.png",
+
+        description: "រៀន Bootstrap 5 Framework សម្រាប់បង្កើត Website Responsive បានលឿន និងមាន Design ស្អាត។",
+        video: "https://www.youtube.com/embed/-qfEOE4vtxE"
     },
+
+    // id: 6
     {
         id: 6,
         title: "Tailwind CSS",
@@ -105,8 +131,13 @@ export const courses = [
         duration: "14 Hours",
         rating: 4.8,
         students: 310,
-        image: "../images/p6.png"
+        image: "../images/p6.png",
+
+        description: "រៀន Tailwind CSS Utility Class និងបង្កើត UI Modern ដោយមិនចាំបាច់សរសេរ CSS ច្រើន។",
+        video: "https://www.youtube.com/embed/pfaSUYaSgRo"
     },
+
+    // id: 7
     {
         id: 7,
         title: "React JS",
@@ -119,8 +150,13 @@ export const courses = [
         duration: "30 Hours",
         rating: 4.9,
         students: 670,
-        image: "../images/p7.png"
+        image: "../images/p7.png",
+
+        description: "រៀន React JS ពី Component, Props, State, Hooks, Router និងការបង្កើត Web Application។",
+        video: "https://www.youtube.com/embed/SqcY0GlETPk"
     },
+
+    // id: 8
     {
         id: 8,
         title: "Next.js",
@@ -133,8 +169,13 @@ export const courses = [
         duration: "35 Hours",
         rating: 4.8,
         students: 210,
-        image: "../images/p8.png"
+        image: "../images/p8.png",
+
+        description: "សិក្សា Next.js Framework សម្រាប់បង្កើត React Application ដែលមាន Performance ខ្ពស់។",
+        video: "https://www.youtube.com/embed/ZVnjOPwW4ZA"
     },
+
+    // id: 9
     {
         id: 9,
         title: "Vue.js",
@@ -147,8 +188,13 @@ export const courses = [
         duration: "25 Hours",
         rating: 4.7,
         students: 180,
-        image: "../images/p9.png"
+        image: "../images/p9.png",
+
+        description: "រៀន Vue.js ពី Component, Props, Reactive Data និងការបង្កើត Frontend Application។",
+        video: "https://www.youtube.com/embed/FXpIoQ_rT_c"
     },
+
+    // id: 10
     {
         id: 10,
         title: "Python Programming",
@@ -161,8 +207,12 @@ export const courses = [
         duration: "20 Hours",
         rating: 4.9,
         students: 800,
-        image: "../images/p10.png"
+        image: "../images/p10.png",
+
+        description: "រៀន Python ពី Syntax មូលដ្ឋាន, Variable, Function, Loop និងការសរសេរកម្មវិធី។",
+        video: "https://www.youtube.com/embed/rfscVS0vtbw"
     },
+    // id: 11
     {
         id: 11,
         title: "Python OOP",
@@ -175,8 +225,13 @@ export const courses = [
         duration: "18 Hours",
         rating: 4.8,
         students: 260,
-        image: "../images/p11.png"
+        image: "../images/p11.png",
+
+        description: "រៀន Object Oriented Programming ក្នុង Python ដូចជា Class, Object, Inheritance និង Encapsulation។",
+        video: "https://www.youtube.com/embed/Ej_02ICOIgs"
     },
+
+    // id: 12
     {
         id: 12,
         title: "Python Django",
@@ -189,8 +244,13 @@ export const courses = [
         duration: "40 Hours",
         rating: 4.9,
         students: 150,
-        image: "../images/p12.png"
+        image: "../images/p12.png",
+
+        description: "រៀនបង្កើត Web Application ជាមួយ Django Framework, Database, Model និង Authentication។",
+        video: "https://www.youtube.com/embed/rHux0gMZ3Eg"
     },
+
+    // id: 13
     {
         id: 13,
         title: "PHP & MySQL",
@@ -203,8 +263,13 @@ export const courses = [
         duration: "24 Hours",
         rating: 4.7,
         students: 340,
-        image: "../images/p13.png"
+        image: "../images/p13.png",
+
+        description: "រៀន PHP និង MySQL សម្រាប់បង្កើត Dynamic Website និងភ្ជាប់ Database។",
+        video: "https://www.youtube.com/embed/OK_JCtrrv-c"
     },
+
+    // id: 14
     {
         id: 14,
         title: "Laravel Framework",
@@ -217,8 +282,13 @@ export const courses = [
         duration: "32 Hours",
         rating: 4.8,
         students: 220,
-        image: "../images/p14.png"
+        image: "../images/p14.png",
+
+        description: "សិក្សា Laravel Framework, Routing, Controller, Migration និង Database Management។",
+        video: "https://www.youtube.com/embed/MYyJ4PuL4pY"
     },
+
+    // id: 15
     {
         id: 15,
         title: "Node.js",
@@ -231,8 +301,13 @@ export const courses = [
         duration: "28 Hours",
         rating: 4.8,
         students: 390,
-        image: "../images/p15.png"
+        image: "../images/p15.png",
+
+        description: "រៀន Node.js សម្រាប់បង្កើត Backend Server, API និងភ្ជាប់ជាមួយ Database។",
+        video: "https://www.youtube.com/embed/Oe421EPjeBE"
     },
+
+    // id: 16
     {
         id: 16,
         title: "Express.js",
@@ -245,8 +320,13 @@ export const courses = [
         duration: "15 Hours",
         rating: 4.7,
         students: 175,
-        image: "../images/p16.png"
+        image: "../images/p16.png",
+
+        description: "រៀន Express.js សម្រាប់បង្កើត REST API, Routing និង Middleware។",
+        video: "https://www.youtube.com/embed/L72fhGm1tfE"
     },
+
+    // id: 17
     {
         id: 17,
         title: "UI/UX Design",
@@ -259,8 +339,13 @@ export const courses = [
         duration: "16 Hours",
         rating: 4.8,
         students: 450,
-        image: "../images/p17.png"
+        image: "../images/p17.png",
+
+        description: "រៀនគោលការណ៍ UI/UX Design, User Research, Wireframe និងការរចនា Interface។",
+        video: "https://www.youtube.com/embed/c9Wg6Cb_YlU"
     },
+
+    // id: 18
     {
         id: 18,
         title: "Figma for Beginners",
@@ -273,8 +358,13 @@ export const courses = [
         duration: "12 Hours",
         rating: 4.7,
         students: 500,
-        image: "../images/p18.png"
+        image: "../images/p18.png",
+
+        description: "រៀនប្រើ Figma ចាប់ពីការបង្កើត Design, Component, Prototype និង UI Design។",
+        video: "https://www.youtube.com/embed/FTFaQWZBqQ8"
     },
+
+    // id: 19
     {
         id: 19,
         title: "Adobe Photoshop",
@@ -287,8 +377,13 @@ export const courses = [
         duration: "18 Hours",
         rating: 4.6,
         students: 270,
-        image: "../images/p19.png"
+        image: "../images/p19.png",
+
+        description: "រៀន Photoshop សម្រាប់កែរូបភាព, Design Poster, Banner និង Graphic Design។",
+        video: "https://www.youtube.com/embed/IyR_uYsRdPs"
     },
+
+    // id: 20
     {
         id: 20,
         title: "Flutter Mobile App",
@@ -301,7 +396,9 @@ export const courses = [
         duration: "35 Hours",
         rating: 4.9,
         students: 300,
-        image: "../images/p20.png"
+        image: "../images/p20.png",
+        description: "រៀន Flutter និង Dart ដើម្បីបង្កើត Mobile Application សម្រាប់ Android និង iOS។",
+        video: "https://www.youtube.com/embed/VPvVD8t02U8"
     }
 ];
 
