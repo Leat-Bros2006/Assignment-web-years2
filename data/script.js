@@ -1,7 +1,7 @@
 export const navbar = [
     {
         menu: "ទំព័រដើម",
-        link: "#"
+        link: "../index.html"
     },
     {
         menu: "វគ្គសិក្សា",
