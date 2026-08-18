@@ -47,12 +47,12 @@ function renderCourseDetail(course) {
             smgSuccess.style.textAlign = "center"
 
             setTimeout(() => {
-                window.location.href = `../html/checkout.html?id=${course.id}`;
+                window.location.href = `checkout.html?id=${course.id}`;
             }, 1700)
 
         } else {
             localStorage.setItem("pendingCourseId", course.id);
-            window.location.href = `../html/login.html?id=${course.id}`;
+            window.location.href = `login.html?id=${course.id}`;
         }
     })
 }

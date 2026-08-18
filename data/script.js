@@ -2,15 +2,15 @@ export const navbar = [
     {
         menu: "ទំព័រដើម",
         link: "../index.html"
-    },
-    {
+    }, {
         menu: "វគ្គសិក្សា",
         link: "../html/courses.html"
     },
     {
-        menu: "ប្រភេទ",
-        link: "#"
+        menu: "វគ្គសិក្សារបស់ខ្ញុំ",
+        link: "../html/my-courses.html"
     },
+
     {
         menu: "អំពីយើង",
         link: "../html/aboutUs.html"

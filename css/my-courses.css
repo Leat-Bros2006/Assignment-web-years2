@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Khmer", sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    text-align: center;
+    padding-top: 30px;
+}
+
+header h1 {
+    color: #022e61;
+    font-size: 30px;
+}
+
+.line {
+    width: 90%;
+    max-width: 1000px;
+    height: 1px;
+    background-color: #d5d5d5;
+    margin: 22px auto 0;
+}
+
+/* ================= CONTAINER ================= */
+
+.my-courses-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+.my-courses-container h2 {
+    color: #022e61;
+    margin-bottom: 25px;
+}
+
+/* ================= COURSES GRID ================= */
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* ================= COURSE CARD ================= */
+
+.course-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Content */
+
+.course-content {
+    padding: 20px;
+}
+
+.course-content h3 {
+    color: #022e61;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.course-content p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* ================= CONTINUE BUTTON ================= */
+
+.continue-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 18px;
+    background-color: #007BA7;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.continue-btn:hover {
+    background-color: #005f82;
+}
+
+/* ================= EMPTY ================= */
+
+.empty-courses {
+    text-align: center;
+    background-color: white;
+    padding: 60px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.empty-courses h3 {
+    color: #022e61;
+    margin-bottom: 10px;
+}
+
+.empty-courses p {
+    color: #777;
+}
+
+.empty-courses a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BA7;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.empty-courses a:hover {
+    background-color: #005f82;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .my-courses-container {
+        width: 92%;
+        margin-top: 25px;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card img {
+        height: 190px;
+    }
+
+}

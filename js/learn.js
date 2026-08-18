@@ -1,21 +1,24 @@
 import { courses } from "../data/script.js";
 
-// 1. Check payment
-let isPurchased = localStorage.getItem("isPurchased");
-
-if (isPurchased !== "true") {
-    alert("សូមបង់ប្រាក់ជាមុនសិន!");
-    window.location.href = "../html/checkout.html";
-}
-
-// 2. Get id from URL
+// 1. Get course ID from URL
 const params = new URLSearchParams(window.location.search);
 const id = Number(params.get("id"));
 
-// 3. Find course
+// 2. Get purchased courses
+let purchasedCourses =
+    JSON.parse(localStorage.getItem("purchasedCourses")) || [];
+
+// 3. Check if this course was purchased
+if (!purchasedCourses.includes(id)) {
+    alert("សូមបង់ប្រាក់ជាមុនសិន!");
+    window.location.href = `checkout.html?id=${id}`;
+    throw new Error("Course not purchased");
+}
+
+// 4. Find course
 const course = courses.find(item => item.id === id);
 
-// 4. Check course
+// 5. Check course
 if (!course) {
     document.body.innerHTML = `
         <div class="not-found">
@@ -26,11 +29,11 @@ if (!course) {
     throw new Error("Course Not Found");
 }
 
-// 5. Display course
+// 6. Display course
 document.getElementById("courseTitle").textContent = course.title;
-document.getElementById("courseDescription").textContent = course.description
+document.getElementById("courseDescription").textContent = course.description;
 
-// បើអ្នកមាន video ក្នុង data
+// 7. Display video
 if (course.video) {
     document.getElementById("courseVideo").src = course.video;
 }
