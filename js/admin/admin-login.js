@@ -64,14 +64,14 @@ loginForm.addEventListener("submit", (e) => {
     // Username
     if (username === "") {
         document.getElementById("usernameError").textContent =
-            "សូមបញ្ចូល Username";
+            "សូមបញ្ចូល ឈ្មោះ";
         isValid = false;
     }
 
     // Password
     if (password === "") {
         document.getElementById("passwordError").textContent =
-            "សូមបញ្ចូល Password";
+            "សូមបញ្ចូល លេខសម្ងាត់";
 
         isValid = false;
     }
@@ -86,7 +86,7 @@ loginForm.addEventListener("submit", (e) => {
     // ======================================
 
     const adminUsername = "admin";
-    const adminPassword = "123456";
+    const adminPassword = "123";
 
     // ======================================
     // Check Login
@@ -118,6 +118,6 @@ loginForm.addEventListener("submit", (e) => {
             "admin-message.html";
     } else {
         document.getElementById("loginError").textContent =
-            "Username ឬ Password មិនត្រឹមត្រូវ";
+            "ឈ្មោះ ឬ លេខសម្ងាត់ មិនត្រឹមត្រូវ!";
     }
 });
