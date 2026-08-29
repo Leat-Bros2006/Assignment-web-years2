@@ -77,8 +77,8 @@ const renderCourse = (dataCourse) => {
     if (dataCourse.length === 0) {
         coursesGrid.innerHTML = `
              <div style="height: 60vh; color:red;">
-                <p>មិនមានតម្លៃនេះទេ!</p>
-                <p>សូមព្យាយាម​​ ស្វែងរកតម្លៃផ្សេងទៀត!</p>
+                <p>រកមិនឃើញវគ្គសិក្សាដែលអ្នកកំពុងស្វែងរកទេ!</p>
+                <p>សូមស្វែងរកម្ដងទៀត!</p>
              </div>
         `;
         return

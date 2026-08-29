@@ -13,8 +13,6 @@ get_form.addEventListener("submit", function (e) {
     const params = new URLSearchParams(window.location.search);
     let courseId = params.get("id");
 
-    // បើ URL មិនមាន id
-    // យកពី localStorage
     if (!courseId) {
         courseId = localStorage.getItem("pendingCourseId");
     }

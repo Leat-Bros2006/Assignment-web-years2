@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Khmer", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f7fb;
+}
+
+.container {
+    width: 95%;
+    margin: 40px auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #0077b6;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+button {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #c1121f;
+}
+
+#empty {
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+    font-size: 18px;
+}
+
+.back-wrapper {
+    width: 95%;
+    margin: 40px auto;
+    margin-top: 25px;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 18px;
+
+    background: white;
+    color: #0077b6;
+
+    border: 1px solid #0077b6;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #0077b6;
+    color: white;
+    transform: translateX(-3px);
+}

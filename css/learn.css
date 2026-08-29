@@ -13,7 +13,7 @@ body {
 /* ===== Main Layout ===== */
 .container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    /* grid-template-columns: ; */
     gap: 25px;
     padding: 30px;
 }
@@ -111,10 +111,10 @@ body {
 /* ===== Responsive ===== */
 @media(max-width:900px) {
 
-    .container {
+    /* .container {
         grid-template-columns: 1fr;
         padding: 20px;
-    }
+    } */
 
     #courseTitle {
         font-size: 25px;

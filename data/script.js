@@ -18,7 +18,7 @@ export const navbar = [
     {
         menu: "ទំនាក់ទំនង",
         link: "../html/contact.html"
-    },
+    }
 ]
 
 // Course Data

@@ -443,7 +443,6 @@
 }
 
 /* =========== Instructor Section =========== */
-
 .instructor-section {
     padding: 80px 100px;
     background: #f8fafc;
@@ -657,6 +656,25 @@
     border-radius: 10px;
     cursor: pointer;
 
+}
+
+/* admin-login */
+.footer-bottom {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-login {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.admin-login:hover {
+    color: white;
 }
 
 /* ================= MOBILE ================= */
